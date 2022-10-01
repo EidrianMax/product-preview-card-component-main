@@ -117,7 +117,7 @@ button {
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .card {
     max-width: 600px;
     flex-direction: row;
