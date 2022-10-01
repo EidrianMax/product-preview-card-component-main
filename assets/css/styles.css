@@ -1,0 +1,135 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-cyan: hsl(158, 35%, 25%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Mini Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+p {
+  margin-top: 0;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Mobile */
+.main {
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  border-radius: 0.5em;
+  background-color: var(--white);
+  color: var(--dark-grayish-blue);
+  overflow: hidden;
+  font-family: "Montserrat", serif;
+}
+
+.card__picture {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__body {
+  padding: 1.4em;
+}
+
+.card__subtitle {
+  font-size: 0.8rem;
+  letter-spacing: 0.25rem;
+}
+
+.card__title {
+  font-family: "Fraunces", serif;
+  font-size: 2.1rem;
+  line-height: 1;
+  color: var(--very-dark-blue);
+}
+
+.card__description {
+  font-size: 0.9em;
+  line-height: 1.7;
+}
+
+.card__price {
+  font-family: "Fraunces", serif;
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card__text {
+  margin-bottom: 0;
+  margin-right: 1em;
+}
+
+.card__old-price {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: var(--dark-grayish-blue);
+  font-family: "Montserrat", serif;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 1em;
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 0.5em;
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .card {
+    max-width: 600px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card__picture {
+    aspect-ratio: auto;
+    width: 50%;
+  }
+
+  .card__body {
+    width: 50%;
+  }
+}
