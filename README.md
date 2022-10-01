@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](/design/desktop-design-end.png)
-![Movile](/design/mobile-design-end.png)
+![Desktop](./design/desktop-design-end.png)
+![Movile](./design/mobile-design-end.png)
 
 ### Links
 
@@ -52,11 +52,11 @@ To see how you can add code snippets, see below:
 <picture class="card__picture">
   <source
     media="(min-width: 768px)"
-    srcset="/assets/images/image-product-desktop.jpg"
+    srcset="./assets/images/image-product-desktop.jpg"
   />
   <img
     class="card__img"
-    src="/assets/images/image-product-mobile.jpg"
+    src="./assets/images/image-product-mobile.jpg"
     alt="Gabrielle Essence Eau De Parfum"
   />
 </picture>
