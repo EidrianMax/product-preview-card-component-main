@@ -24,7 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Hola](./design/desktop-design-end.jpg)
+![Desktop](/design/desktop-design-end.png)
+![Movile](/design/mobile-design-end.png)
 
 ### Links
 
